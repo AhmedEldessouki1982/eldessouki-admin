@@ -1,0 +1,12 @@
+.Home__Container {
+    display: flex;
+    position: relative;
+    .canvas {
+        flex: 5;
+        .Home__Container_cards {
+            display: flex;
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+    }
+}

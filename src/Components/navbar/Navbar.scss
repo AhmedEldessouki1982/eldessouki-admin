@@ -1,0 +1,64 @@
+.navbar__Container {
+    height: 3rem;
+    position: relative;
+    background-color: rgb(255, 249, 249);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+    .Navbar__search {
+        display: flex;
+        margin-left: 10px;
+        margin-top: 5px;
+        position: absolute;
+        border: 1px solid rgb(230, 209, 209);
+        height: 65%;
+        width: 250px;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 7px;
+    }
+    .search__icon {
+        margin-right: 5px;
+        color:rgb(7, 161, 233);
+
+    }
+    .search__input {
+        margin-right: 5px;
+        border: none;
+        color: rgb(51, 51, 236);
+        width: 100%;
+        height: 70%;
+        background-color: transparent;
+    }
+
+    .Navbar__icons {
+        display: flex;
+        position: absolute;
+        right: 15px;
+        font-size: 29px;
+
+        .Navbar__icons__childs {
+            display: flex;
+            color:rgb(7, 161, 233);
+            margin-left: 3rem;
+            cursor: pointer;
+        }
+        .Navbar__icons__childs div {
+            position: absolute;
+            top: -8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(255, 0, 0);
+            border-radius: 100%;
+            width: 1.5rem;
+            height: 1.5rem;
+            font-size: 1rem;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+    }
+}
