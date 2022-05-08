@@ -4,19 +4,22 @@ import Sidebar from '../../Components/sidebar/Sidebar';
 import Navbar from '../../Components/navbar/Navbar';
 import Card from '../../Components/card/Card';
 import { CardData } from '../../utils/CardsDataSelection';
+import Chart from '../../Components/chart/Chart';
+import Featured from '../../Components/featured/Featured';
 
 export default function Home () {
     return (
         <>
             <div className='Home__Container'>
                 <Sidebar />
-                <div className='canvas'>
+                <div className='canvas__container'>
                     <Navbar />
                     <div className='Home__Container_cards'>
                         {
                             CardData.map (
-                                data => (
+                                (data,i) => (
                                     <Card
+                                    key = {i}
                                     title = {data.title}
                                     link = {data.link}
                                     color = {data.color}
@@ -25,6 +28,12 @@ export default function Home () {
                             )
                         }
                     </div>
+
+                    <div className= 'canvas__bottom'>
+                        <Featured/>
+                        <Chart/>
+                    </div>
+                    
                 </div>
             </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
         </>
