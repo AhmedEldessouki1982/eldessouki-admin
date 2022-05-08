@@ -11,17 +11,20 @@ export default function Home () {
             <div className='Home__Container'>
                 <Sidebar />
                 <div className='canvas'>
-
                     <Navbar />
-
                     <div className='Home__Container_cards'>
-                        
                         {
-                            console.log(CardData)
+                            CardData.map (
+                                data => (
+                                    <Card
+                                    title = {data.title}
+                                    link = {data.link}
+                                    color = {data.color}
+                                    />
+                                )
+                            )
                         }
-
                     </div>
-                                           
                 </div>
             </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
         </>
